@@ -1,0 +1,26 @@
+{
+  "name": "lab26-angular-routing",
+  "version": "1.0.0",
+  "description": "front-end angular routing",
+  "main": "karma.conf.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/silvershotm1/lab-26-angular-routing.git"
+  },
+  "keywords": [
+    "routing",
+    "angular"
+  ],
+  "author": "Michael Bishop",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/silvershotm1/lab-26-angular-routing/issues"
+  },
+  "homepage": "https://github.com/silvershotm1/lab-26-angular-routing#readme"
+}
