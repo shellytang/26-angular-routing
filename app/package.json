@@ -1,0 +1,11 @@
+{
+  "name": "lab-26-angular-routing",
+  "version": "1.0.0",
+  "description": "angular routing",
+  "main": "entry.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Ron Dunphy",
+  "license": "ISC"
+}
