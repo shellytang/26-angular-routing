@@ -8,7 +8,7 @@
   },
   "scripts": {
     "build": "webpack",
-    "build-watch": "webpack-dev-server --inline hot",
+    "build-watch": "webpack-dev-server --inline --hot --port 8081",
     "test": "karma start --single-run",
     "lint": "eslint ."
   },
