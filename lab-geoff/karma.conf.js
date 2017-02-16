@@ -7,19 +7,19 @@ module.exports = function(config) {
     basePath: '',
     frameworks: ['jasmine'],
     files: [
-      'test/**/*-test.js'
+      'test/*.js'
     ],
     exclude: [
     ],
     preprocessors: {
-      'test/**/*-test.js': ['webpack']
+      'test/*.js': ['webpack']
     },
     reporters: ['progress'],
     port: 9876,
     colors: true,
     logLevel: config.LOG_INFO,
     autoWatch: true,
-    browsers: ['PhantomJS'],
+    browsers: ['Chrome'],
     singleRun: false,
     concurrency: Infinity
   });
