@@ -1,9 +1,10 @@
 require('./scss/main.scss');
 
+let path = require('path');
+let pascalcase = require('pascalcase');
+let camelcase = require('camelcase');
 let angular = require('angular');
 let uiRouter = require('angular-ui-router');
-let pascalcase = require('pascalcase');
-let path = require('path');
 
 let routesApp = angular.module('routesApp', [uiRouter]);
 
