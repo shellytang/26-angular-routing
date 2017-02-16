@@ -1,0 +1,9 @@
+{
+  "name": "lab26",
+  "version": "1.0.0",
+  "description": "Angular Routing Lab",
+  "main": "entry.js",
+  "repository": {},
+  "author": "Carolina Ceja",
+  "license": "MIT"
+}
