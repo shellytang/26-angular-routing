@@ -3,7 +3,7 @@
 module.exports = ['$stateProvider', '$urlRouterProvider', routerConfig];
 
 function routerConfig($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.when('/', '/home');
+  $urlRouterProvider.when('/', '/home', '/gallery');
 //line 6 is an anchor, it will take you to that spot, with a # in the URL that shows it
   var routes = [
     {
@@ -25,7 +25,7 @@ function routerConfig($stateProvider, $urlRouterProvider) {
       url: '/gallery',
       template: require('../view/gallery/gallery.html'),
       controller: 'GalleryController',
-      controllerAs: 'GalleryCtrl'
+      controllerAs: 'galleryCtrl'
     }
   ];
 
