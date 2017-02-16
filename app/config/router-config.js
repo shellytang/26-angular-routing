@@ -5,7 +5,7 @@ module.exports = ['$stateProvider', '$urlRouterProvider', routerConfig];
 function routerConfig($stateProvider, $urlRouterProvider) {
   $urlRouterProvider.when('/', '/home');
 //line 6 is an anchor, it will take you to that spot, with a # in the URL that shows it
-  let routes = [
+  var routes = [
     {
       name: 'home',
       url: '/home',
@@ -19,6 +19,13 @@ function routerConfig($stateProvider, $urlRouterProvider) {
       template: require('../view/signup/signup.html'),
       controller: 'SignupController',
       controllerAs: 'signupCtrl'
+    },
+    {
+      name: 'gallery',
+      url: '/gallery',
+      template: require('../view/gallery/gallery.html'),
+      controller: 'GalleryController',
+      controllerAs: 'GalleryCtrl'
     }
   ];
 
