@@ -7,7 +7,10 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "webpack",
+    "build-watch": "webpack-dev-server --inline hot",
+    "test": "karma start --single-run",
+    "lint": "eslint ."
   },
   "repository": {
     "type": "git",
