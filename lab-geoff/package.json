@@ -4,8 +4,8 @@
   "description": "401 JS lab-26",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "test-watch": "todo",
+    "test": "karma start --single-run",
+    "test-watch": "karma",
     "build" : "webpack",
     "build-watch": "webpack-dev-server --inline --hot",
     "lint": "todo"
