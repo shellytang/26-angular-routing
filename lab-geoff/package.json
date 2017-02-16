@@ -7,7 +7,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "test-watch": "todo",
     "build" : "webpack",
-    "build-watch": "todo",
+    "build-watch": "webpack-dev-server --inline --hot",
     "lint": "todo"
   },
   "author": "geoff cox",
