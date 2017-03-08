@@ -3,7 +3,7 @@
 module.exports = ['$stateProvider', '$urlRouterProvider', routerConfig];
 
 function routerConfig($stateProvider, $urlRouterProvider) {
-  $urlRouterProvider.when('/', '/home', '/gallery');
+  $urlRouterProvider.when('/', '/home');
 //line 6 is an anchor, it will take you to that spot, with a # in the URL that shows it
   var routes = [
     {
