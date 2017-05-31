@@ -1,11 +1,11 @@
 // Karma configuration
 // Generated on Tue May 30 2017 18:12:40 GMT-0700 (PDT)
-const webpackConfig = require('./webpack.config.js');
-delete webpackConfig.entry;
+const webpack = require('./webpack.config.js');
+delete webpack.entry;
 
 module.exports = function(config) {
   config.set({
-    webpack: webpackConfig,
+    webpack,
     basePath: '',
     frameworks: ['jasmine'],
     files: [
@@ -15,6 +15,8 @@ module.exports = function(config) {
     exclude: [
     ],
     preprocessors: {
+      'app/entry.js': ['webpack'],
+      'test/**/*-test.js': ['webpack'],
     },
     reporters: ['mocha'],
     port: 9876,
