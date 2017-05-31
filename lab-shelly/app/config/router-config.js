@@ -2,9 +2,9 @@
 
 module.exports = [
   '$stateProvider',
-  '$urlProvider',
-  function($stateProvider, $urlProvider) {
-    $urlProvider.when('', '/home');
+  '$urlRouterProvider',
+  function($stateProvider, $urlRouterProvider) {
+    $urlRouterProvider.when('', '/home');
     let routes = [
       {
         name: 'home',
@@ -19,6 +19,13 @@ module.exports = [
         template: require('../view/signup/signup.html'),
         controller: 'SignupController',
         controllerAs: 'signupCtrl',
+      },
+      {
+        name: 'gallery',
+        url: '/gallery',
+        template: require('../view/gallery/gallery.html'),
+        controller: 'GalleryController',
+        controllerAs: 'galleryCtrl',
       },
     ];
     routes.forEach(route => $stateProvider.state(route));
