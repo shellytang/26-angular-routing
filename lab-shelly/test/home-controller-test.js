@@ -1,8 +1,5 @@
 'use strict';
 
-const angular = require('angular');
-require('angular-mocks');
-
 describe('Testing the home controller', function () {
 
   beforeEach(() => {
