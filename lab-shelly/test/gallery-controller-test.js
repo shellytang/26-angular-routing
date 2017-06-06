@@ -1,8 +1,5 @@
 'use strict';
 
-const angular = require('angular');
-require('angular-mocks');
-
 describe('Testing the gallery controller ', function () {
 
   beforeEach(() => {
@@ -13,7 +10,6 @@ describe('Testing the gallery controller ', function () {
       this.galleryCtrl.$onInit();
     });
   });
-
   afterEach(() => this.$rootScope.$apply());
 
   it('should have a title', () => {
